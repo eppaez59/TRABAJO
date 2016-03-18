@@ -1,0 +1,43 @@
+import java.util.Scanner;
+public class Cliente{
+	public String codigo;
+	public String nombre;
+	public String apellido;
+	public String direccion;
+	public String telefono;
+	
+	
+	public Cliente(){
+		codigoo = "";
+		nombre = "";
+		apellido = "";
+		direccion = "";
+		telefono = "";
+	}
+	public Cliente(String nombre, String codigo){
+		this.nombre= nombre;
+		this.codigo= codigo;
+	}
+	public void capturar (){
+		
+	}
+	public static void impresion (){
+		System.out.println(this);
+	}
+	public  static void eliminar (Cliente[] clientes,int cantidadClientes, String codigo){
+		for(int i=0; i<cantidadClientes;i++){
+			if(clientes[i].codigo.equals(codigo)){
+				clientes[i] = null;
+			}
+		}
+	}
+	public  static void eliminarTodos (Cliente[] clientes, String codigo){
+		clientes = null;
+	}
+	public static void modificar (Cliente[] clientes, String codigo){
+		
+	}
+	
+	
+	
+	}
