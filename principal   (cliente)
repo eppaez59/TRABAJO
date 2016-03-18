@@ -1,0 +1,17 @@
+import java.util.*;
+public class Principal{
+	private Cliente clientes[3];
+	
+	public class Principal(){
+		clientes = new Cliente[3]();
+		clientes[0] = new Cliente("diego", "1");
+		clientes[1] = new Cliente("alberto", "2");
+		clientes[2] = new Cliente("otro", "3");
+		
+		Cliente.eliminar(clientes,3,"2")
+	}
+	public static void main(String args[]){
+		Principal principal = new Principal();
+	}
+	
+	}
